@@ -1,0 +1,5 @@
+MATCH
+(Person) -[:BORN_IN]-> (FR:Location),
+(Person)-[:MARRIED]-> ()-[:LIVES_IN]->(USA:Location),
+(Person)-[:LIVES_IN]->(EU:Location)
+RETURN Person.name
