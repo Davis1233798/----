@@ -1,0 +1,24 @@
+@prefix : <http://api.stardog.com/> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix : <urn:example:>.
+_:lucy         a :Person;  :name "Lucy"; :type "person"; :born_in _:idaho.
+_:idaho        a :Location; :name "Idaho"; :type "state"; :within  _:united_state.
+_:united_state a :Location; :name "United State"; :type "country"; :within _:namerica.
+_:namerica     a :Location; :name "North America"; :type "continent"
+_:lucy         a :Person;  :name "Lucy"; :type "person"; :lives_in _:london.
+_:lucy         a :Person;  :name "Lucy"; :type "person"; :married _:alain.
+_:alain        a :Person; :name "Alain"; :type "person"; :lives_in _:london.
+_:london         a :Location; :name "London"; :type "city"; :within _:england.
+_:england        a :Location; :name "England"; :type "country"; :within _:united_kingdom.
+_:united_kingdom a :Location; :name "United Kingdom"; :type:"country"; :within _:europe.
+_:europe         a :Location; :name "Europe"; :type:"continent"
+_:alain a :Person; :name "Alain"; :type "person";:born_in _:beaune.
+_:beaune a :Location; :name "Beaune"; :type "city"; :within _:cote_dOr.
+_:cote_dOr a :Location; :name "Cote d'Or"; :type "departement"; :within _:burgundy.
+_:burgundy a :Location; :name_en "Burgundy"; :name_fr "Bourgogne"; :type "region"; :within _:france.
+_:france a :Location; :name "France"; :type "country"; :within :europe.
