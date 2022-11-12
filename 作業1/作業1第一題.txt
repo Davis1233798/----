@@ -1,4 +1,4 @@
-#------Create Table----------
+
 CREATE TABLE vertices(
 	vertex_id integer PRIMARY KEY,
 	properties json
@@ -14,7 +14,7 @@ CREATE TABLE edges (
 CREATE INDEX edges_tails ON edges (tail_vertex);
 CREATE INDEX edges_heads ON edges (head_vertex);
 
-#---------Insert Data-----------
+
 insert into vertices(vertex_id,properties) VALUES(1,'{"name":"Lucy","type":"person"}');
 insert into vertices(vertex_id,properties) VALUES(2,'{"name":"Idaho","abbreviation":"ID","type":"state"}');
 insert into vertices(vertex_id,properties) VALUES(3,'{"name":"United State","type":"country"}');
@@ -25,7 +25,7 @@ insert into vertices(vertex_id,properties) VALUES(7,'{"name":"England","type":"c
 insert into vertices(vertex_id,properties) VALUES(8,'{"name":"United Kingdom","type":"country"}');
 insert into vertices(vertex_id,properties) VALUES(9,'{"name":"Europe","type":"continenet"}');
 insert into vertices(vertex_id,properties) VALUES(10,'{"name":"Beaune","type":"city"}');
-insert into vertices(vertex_id,properties) VALUES(11,'{"name":"Cote-d\'Or","type":"department"}');
+insert into vertices(vertex_id,properties) VALUES(11,'{"name":"Cote-dOr","type":"department"}');
 insert into vertices(vertex_id,properties) VALUES(12,'{"name_en":"Burgundy","name_fr":"Bourgogne","type":"region"}');
 insert into vertices(vertex_id,properties) VALUES(13,'{"name":"France","type":"country"}');
 
