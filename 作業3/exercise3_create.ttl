@@ -1,0 +1,23 @@
+@prefix : <http://api.stardog.com/> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix : <urn:example:>.
+_:lucy             a :person;    :name "Lucy"; :born_in _:idaho.
+_:idaho            a :location;  :name "Idaho"; :type "state"; :within  _:US.
+_:US               a :location;  :name "United State"; :type "country"; :within _:namerica.
+_:namerica         a :location;  :name "North America"; :type "continent"
+_:alain            a :person;    :name "Alain"; :lives_in _:london.
+_:lucy             a :person;    :name "Lucy";  :lives_in _:london; :married _:alain.
+_:london           a :location;  :name "London"; :type "city"; :within _:england.
+_:england          a :location;  :name "England"; :type "country"; :within _:UK.
+_:UK               a :location;  :name "United Kingdom"; :type "country"; :within _:europe.
+_:alain            a :person;    :name "Alain"; :born_in _:beaune.
+_:beaune           a :location;  :name "Beaune"; :type "city"; :within _:cote_dOr.
+_:cote_dOr         a :location;  :name "Cote d'Or"; :type "departement"; :within _:burgundy.
+_:burgundy         a :location;  :name_en "Burgundy";  :name_fr "Bourgogne"; :type "region"; :within _:france.
+_:france           a :location;  :name "France";:type "country"; :within _:europe.
+_:europe           a :location;  :name "Europe"; :type "continent"

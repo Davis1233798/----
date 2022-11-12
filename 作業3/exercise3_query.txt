@@ -1,0 +1,10 @@
+prefix :<urn:example:>
+
+SELECT ?name where{
+    ?cursor1 :name ?name.    
+    ?cursor1 :born_in /:within* /:name "France".
+    ?cursor2 :married ?cursor1.
+    ?cursor2 :born_in / :within* / :name "United State".
+    ?cursor2 :lives_in /:within* / :name "Europe"
+    
+}
