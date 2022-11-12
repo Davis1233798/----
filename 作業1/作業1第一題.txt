@@ -1,3 +1,4 @@
+------Create Table----------
 CREATE TABLE vertices(
 	vertex_id integer PRIMARY KEY,
 	properties json
@@ -12,3 +13,34 @@ CREATE TABLE edges (
 );
 CREATE INDEX edges_tails ON edges (tail_vertex);
 CREATE INDEX edges_heads ON edges (head_vertex);
+
+---------Insert Data-----------
+insert into vertices(vertex_id,properties) VALUES(1,'{"name":"Lucy","type":"person"}');
+insert into vertices(vertex_id,properties) VALUES(2,'{"name":"Idaho","type":"state"}');
+insert into vertices(vertex_id,properties) VALUES(3,'{"name":"United State","type":"country"}');
+insert into vertices(vertex_id,properties) VALUES(4,'{"name":"North America","type":"continent"}');
+insert into vertices(vertex_id,properties) VALUES(5,'{"name":"Alain","type":"person"}');
+insert into vertices(vertex_id,properties) VALUES(6,'{"name":"Europe","type":"continenet"}');
+insert into vertices(vertex_id,properties) VALUES(2,'{"name":"United Kingdom","type":"country"}');
+insert into vertices(vertex_id,properties) VALUES(3,'{"name":"France","type":"country"}');
+insert into vertices(vertex_id,properties) VALUES(4,'{"name":"England","type":"country"}');
+insert into vertices(vertex_id,properties) VALUES(5,'{"name_en":"Burgundy","name_fr":"Bourgogne","type":"region"}');
+insert into vertices(vertex_id,properties) VALUES(6,'{"name":"London","type":"city"}');
+insert into vertices(vertex_id,properties) VALUES(7,'{"name":"Cote-d\'Or","type":"department"}');
+insert into vertices(vertex_id,properties) VALUES(8,'{"name":"Beaune","type":"city"}');
+
+
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(1,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(2,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(3,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(4,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(5,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(6,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(7,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(8,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(9,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(10,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(11,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(12,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(13,,,)
+Insert into edges(edge_id,label,tail_vertex,head_vertex) VALUES(14,,,)
